@@ -1,0 +1,477 @@
+
+
+
+.ntp_hidden {
+    display: none;
+}
+
+.ntp_detail_novel {
+    max-width: 400px;
+}
+.overflow-X {
+    overflow-x: scroll;
+}
+
+html[data-bs-theme="dark"] {
+    .ntp_search_page {
+        .novel_item  {
+            &:hover {
+                box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+            }
+        }
+    }
+
+    .ntp_novel {
+        &:hover {
+            box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+        }
+    }
+}
+
+html[data-bs-theme="light"] {
+    .ntp_search_page {
+        .novel_item  {
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+        }
+    }
+
+    .ntp_novel  {
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+    }
+
+}
+
+.ntp_search_page {
+    .novel_item  {
+        transition: all 400ms ease;
+        
+    }
+}
+
+
+.ntp_dropdown {
+    >.dropdown-menu {
+margin-top: 2px;
+    }
+    &:hover {
+        >.dropdown-menu {
+            display: block;
+            top: 90%;
+            right: 0;
+        }
+    }
+}
+
+.ntp_pass_wrap {
+    position: relative;
+    .ntp-show-hide-pass {
+        width: 30px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+}
+
+.timkiem_tacgia_wrap {
+    position: relative;
+
+    .ntp_drop_down_search_author {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 50%;
+        width: 90%;
+        z-index: 999;
+        gap: 3px;
+        bottom: 0;
+        transform: translate(-50%,90%);
+        transition: all 300ms ease;
+
+        .card-body {
+            max-height: 200px;
+            overflow: auto;   
+        }
+        
+        a {
+            width: 100%;
+
+        }
+    }
+
+    &:hover {
+        .ntp_drop_down_search_author {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%,110%);
+        }
+    }
+}
+
+.ntp_av_wrap_thongke {
+    img {
+        max-width: 100%;
+    }
+}
+
+.modal {
+    .modal-dialog {
+        min-width: 50%;
+    }
+}
+
+
+.ntp_novel_rating {
+    i {
+        cursor: pointer;
+    }
+}
+
+.ntp_user_seting,
+.ntp_user_report {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    &:not(.ntp_default) {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: fit-content;
+        z-index: 999;
+    }
+
+    .ntp_alert_close {
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        border-radius: 50%;
+    }
+}
+
+.modal-body {
+    max-height: 75vh;
+    overflow: auto;
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #efefef;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+table {
+    th, td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    &.ntp_user_list {
+        .ntp_av {
+            height: 40px !important;
+            width: 40px !important;
+            border-radius: 50%;
+        }
+
+        input,
+        select {
+            cursor: pointer;
+        }
+    }
+}
+
+.overflow-Xv {
+    overflow-x: visible;
+}
+
+.overflow-Xh {
+    overflow-x: hidden;
+}
+
+.overflow-Y {
+    overflow-y: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ntp_novel {
+    overflow: hidden;
+    &:not(.card) {
+        max-width: 200px;
+    }
+
+    .ntp_novel_title {
+        padding: 0 10px;
+        white-space: nowrap;
+        width: 100%;
+        text-overflow: ellipsis; 
+        overflow: hidden;
+    }
+}
+
+.ntp_custom_ver_scrollbar,
+body {
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #efefef;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+
+    .main {
+        .ntp_nav {
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+    }
+}
+
+.hide-scroll-bar {
+    &:-webkit-scrollbar {
+        display: none;
+    }
+
+    & {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
+
+
+.ntp_logo {
+    height: 30px;
+    width: 30px;
+}
+
+.ntp_user_loged {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .ntp_av_nav {
+        height: 40px;
+        width: 40px;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+
+.ntp_recommend {
+    .ntp_item {
+        max-width: 900px;
+        padding: 0 10px 0 0;
+        overflow: hidden;
+        display: flex !important;
+
+        
+
+        .ntl_tomtat {
+            max-height: 150px;
+        }
+    }
+
+    .slick-slide {
+        padding-left: 0 !important;
+    }
+}
+
+.ntp_review_wrap {
+    .ntp_review_item_child {
+        margin-left: 100px;
+    }
+
+    .ntp_review_item {
+        .ntp_av_review  {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.ntp_chapter_page {
+    .ntp_content {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .ntp_recommend {
+        .ntp_item {
+            max-height: 300px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .ntp_recommend {
+        .ntp_item {
+            .ntp_img {
+                width: 25% !important;
+            }
+
+            .ntp_infor {
+                width: 75% !important;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 667px) {
+    .ntp_recommend {
+        .ntp_item {
+            max-height: 300px;
+        }
+    }
+
+    .ntp_review_wrap {
+        .ntp_review_item_child {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    .ntp_recommend {
+        .ntp_item {
+            max-height: 600px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+.ntp_novel2 {
+    display: flex; /* Chia cột cho ảnh và thông tin */
+    flex-direction: row;
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 20px; /* Thêm khoảng cách dưới mỗi card */
+    .img-container {
+        flex-shrink: 0; /* Không cho ảnh co lại */
+        width: 120px; /* Đặt chiều rộng ảnh nhỏ */
+        height: 120px;
+        overflow: hidden;
+        margin-right: 15px; /* Khoảng cách giữa ảnh và thông tin */
+    }
+    
+    .ntp_anh_bia {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Cắt ảnh để vừa với khung */
+    }
+    
+    .info-container {
+        flex-grow: 1; /* Cột thông tin chiếm hết không gian còn lại */
+    }
+    
+    .ntp_novel_title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .ntp_novel_infor {
+        font-size: 14px;
+        color: #6c757d;
+    }
+}
+
+.ntp_novel2:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.ntp_title {
+    font-family: 'STKaiti', 'Noto Serif', serif; /* Kiểu font chữ tiên hiệp hoặc gần gũi */
+    color: #fdaa04; /* Màu cam */
+    font-weight: bold; /* Đậm chữ */
+    font-size: 1.75rem; /* Kích thước chữ vừa phải, có thể thay đổi */
+}
+.ntp_logo {
+    width: 50px; /* Điều chỉnh kích thước logo theo nhu cầu */
+    height: auto; /* Giữ tỷ lệ khung hình */
+}
+

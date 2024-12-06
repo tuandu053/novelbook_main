@@ -1,0 +1,22 @@
+.ntp_novel_list {
+    .ntp_anh_bia  {
+        max-width: 150px;
+    }
+
+    .name {
+        max-width: 150px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+
+
+#ntp_form_create_novel {
+    .ntp_select_the_loai {
+        max-height: 300px;
+    }
+}

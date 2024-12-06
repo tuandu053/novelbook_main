@@ -1,0 +1,89 @@
+.ntp_reader_controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; /* Chiều rộng khung tự động vừa đủ */
+}
+
+.ntp_reader_controls .card {
+    display: inline-block; /* Cho phép card chỉ rộng vừa đủ chứa các nút */
+    background-color: #e9f1f7; /* Màu nền sáng cho khung, hài hòa với màu nút */
+    border: 1px solid #ddd; /* Đường viền nhẹ */
+    border-radius: 10px; /* Bo tròn góc cho khung */
+    padding: 10px;
+}
+
+.ntp_reader_controls .card-body {
+    padding: 0; /* Loại bỏ padding mặc định */
+}
+
+.ntp_reader_controls .ntp_controls {
+    display: flex; /* Dùng flexbox để căn chỉnh các nút */
+    justify-content: space-between; /* Phân bố đều các nút */
+    width: 100%; /* Đảm bảo các nút chiếm hết không gian khung */
+}
+
+.ntp_reader_controls .ntp_controls button {
+    flex: 1; /* Các nút chiếm đều không gian trong khung */
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+    font-size: 14px; /* Cỡ chữ cho các nút */
+}
+
+.ntp_reader_controls .ntp_controls button i {
+    margin-right: 8px; /* Khoảng cách giữa icon và văn bản */
+}
+.ntp_controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.ntp_controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.ntp_controls button i {
+    margin-right: 8px; /* Khoảng cách giữa biểu tượng và chữ */
+}
+
+.ntp_controls button:hover {
+    transform: scale(1.1);
+}
+
+.ntp_controls button:active {
+    transform: scale(0.95);
+}
+
+/* Màu sắc cho từng nút */
+.ntp_get_content {
+    background-color: #007bff;
+    color: white;
+}
+
+.ntp_pause {
+    background-color: #ffc107;
+    color: white;
+}
+
+.ntp_resume {
+    background-color: #28a745;
+    color: white;
+}
+
+.ntp_stop {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Thêm hiệu ứng hover */
+.ntp_controls button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
